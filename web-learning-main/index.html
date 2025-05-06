@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บเรียนรู้ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-graduation-cap"></i> เว็บเรียนรู้ของฉัน</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> หน้าหลัก</a></li>
+                    <li><a href="English.html"><i class="fas fa-language"></i> ภาษาอังกฤษ</a></li>
+                    <li><a href="Thai.html"><i class="fas fa-book"></i> ภาษาไทย</a></li>
+                    <li><a href="Math.html"><i class="fas fa-calculator"></i> คณิตศาสตร์</a></li>
+                    <li><a href="Computer.html"><i class="fas fa-laptop-code"></i> คอมพิวเตอร์</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>ยินดีต้อนรับสู่เว็บเรียนรู้
+                <p>แหล่งเรียนรู้แบบครบวงจรสำหรับทุกวัย</p>
+        </section>
+
+        <section class="categories container">
+            <div class="category-card" onclick="location.href='english.html'">
+                <i class="fas fa-language"></i>
+                <h3>ภาษาอังกฤษ</h3>
+                <p>เรียนรู้คำศัพท์และไวยากรณ์พื้นฐาน</p>
+            </div>
+            <div class="category-card" onclick="location.href='thai.html'">
+                <i class="fas fa-book"></i>
+                <h3>ภาษาไทย</h3>
+                <p>ฝึกอ่านเขียนและหลักภาษา</p>
+            </div>
+            <div class="category-card" onclick="location.href='math.html'">
+                <i class="fas fa-calculator"></i>
+                <h3>คณิตศาสตร์</h3>
+                <p>แบบฝึกหัดทางคณิตศาสตร์
+            </div>
+            <div class="category-card" onclick="location.href='computer.html'">
+                <i class="fas fa-laptop-code"></i>
+                <h3>คอมพิวเตอร์</h3>
+                <p>หลักการเรียนรู้ทางคอมพิวเตอร์
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 เว็บเรียนรู้ของฉัน</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

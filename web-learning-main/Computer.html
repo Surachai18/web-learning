@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คอมพิวเตอร์ | เว็บเรียนรู้ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>การเรียนรู้คอมพิวเตอร์</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="english.html">ภาษาอังกฤษ</a></li>
+                    <li><a href="thai.html">ภาษาไทย</a></li>
+                    <li><a href="math.html">คณิตศาสตร์</a></li>
+                    <li><a href="computer.html" class="active">คอมพิวเตอร์</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="hardware">ฮาร์ดแวร์</button>
+            <button class="tab-button" data-tab="software">ซอฟต์แวร์</button>
+            <button class="tab-button" data-tab="network">เครือข่าย</button>
+        </div>
+
+        <div id="hardware" class="tab-content active">
+            <div class="lesson card">
+                <h3><i class="fas fa-desktop"></i> ฮาร์ดแวร์คอมพิวเตอร์</h3>
+                <p>ฮาร์ดแวร์คือส่วนประกอบที่จับต้องได้ของคอมพิวเตอร์ เช่น CPU, RAM, ฮาร์ดดิสก์, เมาส์ และคีย์บอร์ด</p>
+            </div>
+        </div>
+
+        <div id="software" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-code"></i> ซอฟต์แวร์คอมพิวเตอร์</h3>
+                <p>ซอฟต์แวร์คือโปรแกรมหรือชุดคำสั่งที่ทำให้ฮาร์ดแวร์ทำงาน เช่น ระบบปฏิบัติการ (Windows, macOS) และโปรแกรม Microsoft Word, Photoshop เป็นต้น</p>
+            </div>
+        </div>
+
+        <div id="network" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-network-wired"></i> เครือข่ายคอมพิวเตอร์</h3>
+                <p>เครือข่ายคือการเชื่อมต่อคอมพิวเตอร์หลายเครื่องเข้าด้วยกัน เพื่อแบ่งปันข้อมูลและอุปกรณ์ เช่น อินเทอร์เน็ตและ LAN</p>
+            </div>
+        </div>
+
+        <div class="quiz card">
+            <h3><i class="fas fa-question-circle"></i> แบบทดสอบ</h3>
+
+            <div class="question" data-answer="c">
+                <p>1. อุปกรณ์ใดจัดเป็นฮาร์ดแวร์?</p>
+                <label><input type="radio" name="q1" value="a"> Windows</label><br>
+                <label><input type="radio" name="q1" value="b"> Photoshop</label><br>
+                <label><input type="radio" name="q1" value="c"> เมาส์</label>
+            </div>
+
+            <div class="question" data-answer="a">
+                <p>2. ข้อใดคือซอฟต์แวร์ระบบ?</p>
+                <label><input type="radio" name="q2" value="a"> Windows</label><br>
+                <label><input type="radio" name="q2" value="b"> CPU</label><br>
+                <label><input type="radio" name="q2" value="c"> RAM</label>
+            </div>
+
+            <button class="check-answers"><i class="fas fa-check-circle"></i> ตรวจคำตอบ</button>
+            <div id="quiz-result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 เว็บเรียนรู้ของฉัน</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

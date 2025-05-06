@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คณิตศาสตร์ | เว็บเรียนรู้ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>การเรียนรู้คณิตศาสตร์</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="english.html">ภาษาอังกฤษ</a></li>
+                    <li><a href="thai.html">ภาษาไทย</a></li>
+                    <li><a href="math.html" class="active">คณิตศาสตร์</a></li>
+                    <li><a href="computer.html">คอมพิวเตอร์</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="basic">พื้นฐาน</button>
+            <button class="tab-button" data-tab="algebra">พีชคณิต</button>
+            <button class="tab-button" data-tab="geometry">เรขาคณิต</button>
+        </div>
+
+        <div id="basic" class="tab-content active">
+            <div class="lesson card">
+                <h3><i class="fas fa-plus-square"></i> การบวก ลบ คูณ หาร</h3>
+                <p><strong>การบวก:</strong> 5 + 3 = 8</p>
+                <p><strong>การลบ:</strong> 10 - 4 = 6</p>
+                <p><strong>การคูณ:</strong> 6 × 7 = 42</p>
+                <p><strong>การหาร:</strong> 20 ÷ 5 = 4</p>
+            </div>
+        </div>
+
+        <div id="algebra" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-equals"></i> สมการเชิงเส้น</h3>
+                <p>ตัวอย่าง: 2x + 3 = 7</p>
+                <p>วิธีแก้: 2x = 7 - 3 → 2x = 4 → x = 2</p>
+            </div>
+        </div>
+
+        <div id="geometry" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-shapes"></i> พื้นที่รูปทรง</h3>
+                <p><strong>สี่เหลี่ยมผืนผ้า:</strong> กว้าง × ยาว</p>
+                <p><strong>สามเหลี่ยม:</strong> ½ × ฐาน × สูง</p>
+                <p><strong>วงกลม:</strong> πr²</p>
+            </div>
+        </div>
+
+        <div class="quiz card">
+            <h3><i class="fas fa-question-circle"></i> แบบทดสอบ</h3>
+            <div class="question" data-answer="b">
+                <p>1. 8 × 7 = ?</p>
+                <label><input type="radio" name="q1" value="a"> 48</label><br>
+                <label><input type="radio" name="q1" value="b"> 56</label><br>
+                <label><input type="radio" name="q1" value="c"> 64</label>
+            </div>
+            <button class="check-answers"><i class="fas fa-check-circle"></i> ตรวจคำตอบ</button>
+            <div id="quiz-result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 เว็บเรียนรู้ของฉัน</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- ปุ่มย้อนกลับ -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+</body>
+
+</html>

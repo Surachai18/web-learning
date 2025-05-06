@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาษาไทย | เว็บเรียนรู้ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>การเรียนรู้ภาษาไทย</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="english.html">ภาษาอังกฤษ</a></li>
+                    <li><a href="thai.html" class="active">ภาษาไทย</a></li>
+                    <li><a href="math.html">คณิตศาสตร์</a></li>
+                    <li><a href="computer.html">คอมพิวเตอร์</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="vocabulary">คำศัพท์</button>
+            <button class="tab-button" data-tab="grammar">ไวยากรณ์</button>
+            <button class="tab-button" data-tab="reading">การอ่าน</button>
+        </div>
+
+        <div id="vocabulary" class="tab-content active">
+            <div class="lesson card">
+                <h3><i class="fas fa-book"></i> คำศัพท์พื้นฐาน</h3>
+                <p>คำศัพท์ในชีวิตประจำวัน เช่น บ้าน, รถ, โรงเรียน, น้ำ, อาหาร เป็นต้น</p>
+                <ul>
+                    <li><strong>บ้าน</strong> - สถานที่อยู่อาศัย</li>
+                    <li><strong>โรงเรียน</strong> - สถานที่ศึกษา</li>
+                    <li><strong>รถ</strong> - พาหนะสำหรับเดินทาง</li>
+                    <li><strong>อาหาร</strong> - สิ่งที่เรากิน</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="grammar" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-language"></i> ไวยากรณ์ภาษาไทย</h3>
+                <p>การใช้ประโยคที่ถูกต้อง เช่น ประธาน กริยา กรรม</p>
+                <p><strong>ตัวอย่าง:</strong> เด็ก (ประธาน) กิน (กริยา) ข้าว (กรรม)</p>
+            </div>
+        </div>
+
+        <div id="reading" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-book-reader"></i> การอ่านจับใจความ</h3>
+                <p>การอ่านเพื่อทำความเข้าใจเนื้อหา และสามารถสรุปใจความสำคัญได้</p>
+            </div>
+        </div>
+
+        <div class="quiz card">
+            <h3><i class="fas fa-question-circle"></i> แบบทดสอบ</h3>
+
+            <div class="question" data-answer="b">
+                <p>1. "ข้าว" หมายถึงอะไร?</p>
+                <label><input type="radio" name="q1" value="a"> พาหนะ</label><br>
+                <label><input type="radio" name="q1" value="b"> อาหาร</label><br>
+                <label><input type="radio" name="q1" value="c"> สถานที่</label>
+            </div>
+
+            <div class="question" data-answer="c">
+                <p>2. ประโยคใดถูกต้องตามหลักไวยากรณ์?</p>
+                <label><input type="radio" name="q2" value="a"> เด็กกิน</label><br>
+                <label><input type="radio" name="q2" value="b"> กินเด็กข้าว</label><br>
+                <label><input type="radio" name="q2" value="c"> เด็กกินข้าว</label>
+            </div>
+
+            <button class="check-answers"><i class="fas fa-check-circle"></i> ตรวจคำตอบ</button>
+            <div id="quiz-result"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 เว็บเรียนรู้ของฉัน</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

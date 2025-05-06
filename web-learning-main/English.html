@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาษาอังกฤษ | เว็บเรียนรู้ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-language"></i> การเรียนรู้ภาษาอังกฤษ</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> หน้าหลัก</a></li>
+                    <li><a href="english.html" class="active"><i class="fas fa-language"></i> ภาษาอังกฤษ</a></li>
+                    <li><a href="thai.html"><i class="fas fa-book"></i> ภาษาไทย</a></li>
+                    <li><a href="math.html"><i class="fas fa-calculator"></i> คณิตศาสตร์</a></li>
+                    <li><a href="computer.html"><i class="fas fa-laptop-code"></i> คอมพิวเตอร์</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="vocabulary"><i class="fas fa-book-open"></i> คำศัพท์</button>
+            <button class="tab-button" data-tab="grammar"><i class="fas fa-language"></i> ไวยากรณ์</button>
+            <button class="tab-button" data-tab="conversation"><i class="fas fa-comments"></i> บทสนทนา</button>
+        </div>
+
+        <div id="vocabulary" class="tab-content active">
+            <div class="lesson card">
+                <h3><i class="fas fa-book-open"></i> คำศัพท์พื้นฐานภาษาอังกฤษ</h3>
+                <p>คำศัพท์ภาษาอังกฤษที่ใช้บ่อยในชีวิตประจำวัน</p>
+                <ul>
+                    <li><strong>Apple</strong> - แอปเปิ้ล (ผลไม้)</li>
+                    <li><strong>Book</strong> - หนังสือ (สิ่งที่ใช้สำหรับอ่าน)</li>
+                    <li><strong>Cat</strong> - แมว (สัตว์เลี้ยง)</li>
+                    <li><strong>Dog</strong> - สุนัข (สัตว์เลี้ยง)</li>
+                    <li><strong>House</strong> - บ้าน (สถานที่อยู่อาศัย)</li>
+                    <li><strong>School</strong> - โรงเรียน (สถานที่เรียน)</li>
+                    <li><strong>Pen</strong> - ปากกา (อุปกรณ์เขียน)</li>
+                    <li><strong>Water</strong> - น้ำ (ของเหลวดื่มได้)</li>
+                    <li><strong>Food</strong> - อาหาร (สิ่งที่เรากิน)</li>
+                    <li><strong>Teacher</strong> - ครู (ผู้สอน)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="grammar" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-language"></i> ไวยากรณ์ภาษาอังกฤษพื้นฐาน</h3>
+                <p>ไวยากรณ์เบื้องต้นในการสร้างประโยคภาษาอังกฤษ</p>
+                <div>
+                    <h4>Present Simple Tense</h4>
+                    <p>ใช้กับการกระทำที่เกิดขึ้นเป็นประจำ หรือความจริงทั่วไป</p>
+                    <p><strong>โครงสร้าง:</strong> Subject + V1 (s/es)</p>
+                    <p><strong>ตัวอย่าง:</strong> I eat breakfast every day. She goes to school by bus.</p>
+                </div>
+                <div>
+                    <h4>Past Simple Tense</h4>
+                    <p>ใช้สำหรับการกระทำที่เกิดขึ้นแล้วในอดีต</p>
+                    <p><strong>โครงสร้าง:</strong> Subject + V2</p>
+                    <p><strong>ตัวอย่าง:</strong> I played tennis yesterday. She visited her friend last week.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="conversation" class="tab-content">
+            <div class="lesson card">
+                <h3><i class="fas fa-comments"></i> บทสนทนาเบื้องต้น</h3>
+                <p><strong>A:</strong> Hello, how are you?</p>
+                <p><strong>B:</strong> I'm fine, thank you. And you?</p>
+                <p><strong>A:</strong> I'm good. What's your name?</p>
+                <p><strong>B:</strong> My name is John.</p>
+            </div>
+        </div>
+
+        <div class="quiz card">
+            <h3><i class="fas fa-question-circle"></i> แบบทดสอบคำศัพท์</h3>
+            <div class="question" data-answer="a">
+                <p>1. What is the English word for "บ้าน"?</p>
+                <label><input type="radio" name="q1" value="a"> House</label><br>
+                <label><input type="radio" name="q1" value="b"> School</label><br>
+                <label><input type="radio" name="q1" value="c"> Pen</label>
+            </div>
+
+            <div class="question" data-answer="b">
+                <p>2. What is the English word for "อาหาร"?</p>
+                <label><input type="radio" name="q2" value="a"> Dog</label><br>
+                <label><input type="radio" name="q2" value="b"> Food</label><br>
+                <label><input type="radio" name="q2" value="c"> Teacher</label>
+            </div>
+
+            <button class="check-answers"><i class="fas fa-check-circle"></i> ตรวจคำตอบ</button>
+            <div id="quiz-result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 เว็บเรียนรู้ของฉัน</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
